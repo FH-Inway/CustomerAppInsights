@@ -63,6 +63,11 @@
       <Name>CAIClass_SysOperationController_Extension</Name>
       <Link>Classes\CAIClass_SysOperationController_Extension</Link>
     </Content>
+    <Content Include="AxClass\CAIForm_OperationalInsightsParameters_EventHandler">
+      <SubType>Content</SubType>
+      <Name>CAIForm_OperationalInsightsParameters_EventHandler</Name>
+      <Link>Classes\CAIForm_OperationalInsightsParameters_EventHandler</Link>
+    </Content>
     <Content Include="AxClass\CAITable_OperationalInsightsParameters_Extension">
       <SubType>Content</SubType>
       <Name>CAITable_OperationalInsightsParameters_Extension</Name>

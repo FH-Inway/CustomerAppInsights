@@ -16,6 +16,18 @@
 			</FormControl>
 			<Parent>ParametersSelection</Parent>
 		</AxFormExtensionControl>
+		<AxFormExtensionControl xmlns="">
+			<Name>FormExtensionControld0ii4t2p1</Name>
+			<FormControl xmlns=""
+				i:type="AxFormButtonControl">
+				<Name>CAITestTrace</Name>
+				<Type>Button</Type>
+				<FormControlExtension
+					i:nil="true" />
+				<Text>Test trace</Text>
+			</FormControl>
+			<Parent>ParametersSelection</Parent>
+		</AxFormExtensionControl>
 	</Controls>
 	<DataSourceModifications />
 	<DataSourceReferences />

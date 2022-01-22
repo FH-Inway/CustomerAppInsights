@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>CAIForm_OperationalInsightsParameters_EventHandler</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class CAIForm_OperationalInsightsParameters_EventHandler
+{
+    
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>CAITestTrace_OnClicked</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    [
+        FormControlEventHandler(
+            formControlStr(OperationalInsightsProvisioningForm, CAITestTrace),
+            FormControlEventType::Clicked)
+    ]
+    public static void CAITestTrace_OnClicked(FormControl sender, FormControlEventArgs e)
+    {
+        CAITelemetry::trace(
+            Exception::Info,
+            'Test trace from OperationalInsightsProvisioningForm',
+            'Test');
+        info('Test trace sent');
+        warning('Testing warning infolog');
+        error('Testing error infolog');
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>
