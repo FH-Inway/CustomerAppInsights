@@ -78,6 +78,11 @@
       <Name>CAITelemetry</Name>
       <Link>Classes\CAITelemetry</Link>
     </Content>
+    <Content Include="AxClass\CAITelemetryTesting">
+      <SubType>Content</SubType>
+      <Name>CAITelemetryTesting</Name>
+      <Link>Classes\CAITelemetryTesting</Link>
+    </Content>
     <Content Include="AxFormExtension\OperationalInsightsProvisioningForm.CustomerAppInsights">
       <SubType>Content</SubType>
       <Name>OperationalInsightsProvisioningForm.CustomerAppInsights</Name>
