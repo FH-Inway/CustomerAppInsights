@@ -31,6 +31,11 @@ class CAIForm_OperationalInsightsParameters_EventHandler
         info('Test trace sent');
         warning('Testing warning infolog');
         error('Testing error infolog');
+
+        CAITelemetry::metric(
+            'Test metric',
+            47.11);
+
     }
 
 ]]></Source>

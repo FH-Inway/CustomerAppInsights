@@ -213,6 +213,18 @@ public final class CAITelemetry
 ]]></Source>
 			</Method>
 			<Method>
+				<Name>metric</Name>
+				<Source><![CDATA[
+    public static void metric(str _metricName, real _metricValue)
+    {
+        CAITelemetry::appTelemetry().TrackMetric(
+            _metricName,
+            _metricValue);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
 				<Name>exception</Name>
 				<Source><![CDATA[
     /// <summary>
