@@ -33,7 +33,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
+    <Folder Include="Display Menu Items\" />
     <Folder Include="Form Extensions\" />
+    <Folder Include="Forms\" />
     <Folder Include="Label Files\" />
     <Folder Include="Table Extensions\" />
   </ItemGroup>
@@ -88,10 +90,20 @@
       <Name>OperationalInsightsProvisioningForm.CustomerAppInsights</Name>
       <Link>Form Extensions\OperationalInsightsProvisioningForm.CustomerAppInsights</Link>
     </Content>
+    <Content Include="AxForm\CAITelemetryTester">
+      <SubType>Content</SubType>
+      <Name>CAITelemetryTester</Name>
+      <Link>Forms\CAITelemetryTester</Link>
+    </Content>
     <Content Include="AxLabelFile\CAI_en-US">
       <SubType>Content</SubType>
       <Name>CAI_en-US</Name>
       <Link>Label Files\CAI_en-US</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\CAITelemetryTester">
+      <SubType>Content</SubType>
+      <Name>CAITelemetryTester</Name>
+      <Link>Display Menu Items\CAITelemetryTester</Link>
     </Content>
     <Content Include="AxTableExtension\OperationalInsightsParameters.CustomerAppInsights">
       <SubType>Content</SubType>

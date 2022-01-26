@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxForm xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="Microsoft.Dynamics.AX.Metadata.V6">
+	<Name>CAITelemetryTester</Name>
+	<SourceCode>
+		<Methods xmlns="">
+			<Method>
+				<Name>classDeclaration</Name>
+				<Source><![CDATA[
+[Form]
+public class CAITelemetryTester extends FormRun
+{
+}
+]]></Source>
+			</Method>
+		</Methods>
+		<DataSources xmlns="" />
+		<DataControls xmlns="">
+			<Control>
+				<Name>Trace</Name>
+				<Type>Button</Type>
+				<Methods>
+					<Method>
+						<Name>clicked</Name>
+						<Source><![CDATA[
+        /// <summary>
+        ///
+        /// </summary>
+        public void clicked()
+        {
+            super();
+            CAITelemetry::trace(Exception.selection(), Message.text(), funcName());
+        }
+
+]]></Source>
+					</Method>
+				</Methods>
+			</Control>
+		</DataControls>
+		<Members xmlns="" />
+	</SourceCode>
+	<DataSources />
+	<Design>
+		<Pattern xmlns="">SimpleDetails-FastTabsContainer</Pattern>
+		<PatternVersion xmlns="">1.4</PatternVersion>
+		<Controls xmlns="">
+			<AxFormControl xmlns=""
+				i:type="AxFormActionPaneControl">
+				<Name>ActionPane</Name>
+				<Type>ActionPane</Type>
+				<FormControlExtension
+					i:nil="true" />
+				<Controls>
+					<AxFormControl xmlns=""
+						i:type="AxFormButtonGroupControl">
+						<Name>ButtonGroup</Name>
+						<Type>ButtonGroup</Type>
+						<FormControlExtension
+							i:nil="true" />
+						<Controls>
+							<AxFormControl xmlns=""
+								i:type="AxFormButtonControl">
+								<Name>Trace</Name>
+								<Type>Button</Type>
+								<FormControlExtension
+									i:nil="true" />
+								<Text>@SYS26038</Text>
+							</AxFormControl>
+						</Controls>
+					</AxFormControl>
+				</Controls>
+			</AxFormControl>
+			<AxFormControl xmlns=""
+				i:type="AxFormTabControl">
+				<Name>Body</Name>
+				<Type>Tab</Type>
+				<FormControlExtension
+					i:nil="true" />
+				<Controls>
+					<AxFormControl xmlns=""
+						i:type="AxFormTabPageControl">
+						<Name>TestTab</Name>
+						<Pattern>FieldsFieldGroups</Pattern>
+						<PatternVersion>1.1</PatternVersion>
+						<Type>TabPage</Type>
+						<FormControlExtension
+							i:nil="true" />
+						<Controls>
+							<AxFormControl xmlns=""
+								i:type="AxFormStringControl">
+								<Name>Message</Name>
+								<AutoDeclaration>Yes</AutoDeclaration>
+								<Type>String</Type>
+								<FormControlExtension
+									i:nil="true" />
+								<Label>@ApplicationFoundation:WorkflowStatus_TrackingMessageColumn</Label>
+							</AxFormControl>
+							<AxFormControl xmlns=""
+								i:type="AxFormComboBoxControl">
+								<Name>Exception</Name>
+								<AutoDeclaration>Yes</AutoDeclaration>
+								<Type>ComboBox</Type>
+								<FormControlExtension
+									i:nil="true" />
+								<EnumType>Exception</EnumType>
+								<Items />
+							</AxFormControl>
+						</Controls>
+						<ColumnsMode>Fill</ColumnsMode>
+					</AxFormControl>
+				</Controls>
+				<Style>FastTabs</Style>
+			</AxFormControl>
+		</Controls>
+	</Design>
+	<Parts />
+</AxForm>
